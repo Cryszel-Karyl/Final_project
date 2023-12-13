@@ -1,0 +1,951 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@600&display=swap');
+
+body{
+  margin: 0;
+  padding: 0;
+  box-sizing:border-box;
+  background-color: #7752FE;
+  font-family: 'Raleway', sans-serif;
+}
+
+ul{
+  list-style: none;
+}
+
+a{
+  text-decoration: none;
+}
+
+button{
+  outline: none;
+  border: none;
+}
+
+input{
+  outline: none;
+  outline: none
+}
+
+.logo img{
+  width: 90px;
+}
+
+footer {
+  background-color: #190482;
+  color: #fff;
+  text-align: center;
+  padding: 20px 0;
+}
+
+.footer-content {
+  max-width: 960px;
+  margin: 0 auto;
+  font-size: 14px;
+}
+
+.footer-content p {
+  margin: 5px 0;
+}
+
+/*NAV BUTTONS*/
+
+nav{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  box-shadow: 5px 10px 20px rgba(0,0,0,0.3);
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+  background-color: #190482;
+}
+
+nav ul{
+  display: flex;
+}
+
+nav ul li a{
+  font-family: 'Raleway', sans-serif;
+  height: 40px;
+  line-height: 43px;
+  margin: 3px;
+  padding: 0px 17px;
+  display: flex;
+  font-weight: bold;
+  font-size: 15px;
+  text-transform: uppercase;
+  color: #ffffff;
+  letter-spacing: 1px;
+  transition: 0.06s ease;
+}
+
+nav ul.thick {
+  font-weight: bold;
+}
+
+nav ul li a:hover{
+  border-bottom: 2px solid #C2D9FF;
+  box-shadow: 5px 10px 30px #190482;
+}
+
+
+/*HOME*/
+
+#home {
+  width: 100%;
+  height: 630px;
+  background-repeat: no-repeat;
+  flex-direction: column; 
+  position: relative;
+}
+
+.home-text{
+  width: 40%; 
+  position: absolute;
+  right: 5%; 
+  top: 50%;
+  transform: translateY(-50%);
+  color: #ffffff;
+}
+
+.home-img {
+  width: 50%; 
+  border-radius: 20px;
+  float: right;
+  margin-top: 40px; 
+  position: relative;
+}
+
+.home-img img{
+  width: 300px;
+  height: auto;
+  display: block;
+  border-radius: 10px; 
+  position: absolute;
+  top: 280px; 
+  left: 40%; 
+  transform: translate(-50%, -50%); 
+}
+
+.home-text{
+  width: 500px;
+  position: absolute;
+  left: 18%;
+  top: 50%;
+  color: #ffffff;
+  transform: translate(-18%, -50%)
+}
+
+.home-text h1{
+  font-size: 50px;
+  letter-spacing: 3px;
+  margin: 0px;
+}
+
+.home-text h1 span {
+  color: #190482;
+  display: inline-block;
+  animation: scaleAnimation 2s ease-in-out infinite alternate; 
+}
+
+@keyframes scaleAnimation {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.1);
+  }
+}
+
+.home-text h3 {
+  font-size: 20px;
+  color: #ffffff;
+  
+}
+
+.home-text p{
+  color: #ffffff;
+}
+
+.header-btn{
+  width: 120px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #C2D9FF;
+  box-shadow: 5px 10px 40px #190482;
+  border-radius: 4px;
+  color: #000000;
+  margin-top: 25px;
+  transition: 0.6s ease-in-out;
+}
+
+.header-btn:hover{
+  background-color: #190482;
+  box-shadow: 5px 10px 30px #ffffff;
+  color: #ffffff;
+}
+
+/*K' Home*/
+#home2{
+  width: 100%;
+  height: 85vh;
+  background-color: #8E8FFA;   
+  display: flex;
+  box-sizing: border-box;
+  align-items: center;
+  justify-content: space-between;
+  padding: 50px 5% 0px 5%;
+  position: relative;
+}
+
+.home2-box {
+  width: fit-content; 
+  max-width: 100%;
+  padding: 20px;
+  margin: 20px;
+  margin-bottom: 80px;
+  border-radius: 10px;
+  background-color: #7752FE;
+  box-sizing: border-box;
+  box-shadow: 5px 10px 30px #190482;
+}
+
+.home2-img{
+  width: 50%;
+  border-radius: 20px;
+  margin-bottom: 40px;
+}
+
+.home2-img img{
+ width: 250px;
+}
+
+.home2-text{
+ width: 100%;
+ color: #ffffff;
+ letter-spacing: 2px;
+ margin-bottom: 20px;
+ display: inline-block;
+ 
+}
+
+.home2-text h1{
+  font-size: 50px;
+  letter-spacing: 3px;
+  margin: 0px;
+}
+
+
+.home2-text h1 span {
+  font-size: 50;
+  color: #190482;
+  display: inline-block;
+  animation: scaleAnimation 2s ease-in-out infinite alternate; 
+}
+
+@keyframes scaleAnimation {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.1);
+  }
+}
+
+.home2-text h3 {
+  font-size: 20px;
+  color: #ffffff;
+  
+}
+
+.home2-text p{
+  color: #ffffff;
+}
+
+.header-btn{
+  width: 120px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #C2D9FF;
+  box-shadow: 5px 10px 40px #190482;
+  border-radius: 4px;
+  color: #000000;
+  margin-top: 25px;
+  transition: 0.6s ease-in-out;
+}
+
+.header-btn:hover{
+  background-color: #190482;
+  box-shadow: 5px 10px 30px #ffffff;
+  color: #ffffff;
+}
+
+/*ABOUT*/
+
+#about{
+  width: 100%;
+  height: 85vh;
+  background-color: #7752FE;;   
+  display: flex;
+  box-sizing: border-box;
+  align-items: center;
+  justify-content: space-between;
+  padding: 50px 5% 0px 5%;
+  position: relative;
+}
+
+.about-box {
+  width: fit-content; 
+  max-width: 100%;
+  padding: 20px;
+  margin: 20px;
+  margin-bottom: 80px;
+  border-radius: 10px;
+  background-color: #7752FE;
+  box-sizing: border-box;
+  box-shadow: 5px 10px 30px #190482;
+}
+
+.about-img{
+  width: 50%;
+  border-radius: 20px;
+  margin-bottom: 40px;
+}
+
+.about-img img{
+ width: 250px;
+}
+
+.about-text{
+ width: 100%;
+ color: #ffffff;
+ letter-spacing: 2px;
+ margin-bottom: 20px;
+ display: inline-block;
+ 
+}
+
+.about-text h2{
+ font-size: 70px;;
+ font-weight: 600;
+ margin-bottom: 10px;
+}
+
+.about-text h2 span{
+ color: #190482;
+}
+
+.about-text h3{
+ color: #190482;
+}
+
+/*K's About-----------------------------------------------------------------------------------------------------------*/
+#about2{
+  width: 100%;
+  height: 85vh;
+  background-color: #7752FE;;   
+  display: flex;
+  box-sizing: border-box;
+  align-items: center;
+  justify-content: space-between;
+  padding: 50px 5% 0px 5%;
+  position: relative;
+}
+
+.about2-box {
+  width: fit-content; 
+  max-width: 100%;
+  padding: 20px;
+  margin: 20px;
+  margin-right: 28%;;
+  margin-bottom: 80px;
+  border-radius: 10px;
+  background-color: #7752FE;
+  box-sizing: border-box;
+  box-shadow: 5px 10px 30px #190482;
+}
+
+.about2-img{
+  width: 50%;
+  border-radius: 20px;
+  margin-bottom: 40px;
+}
+
+.about2-img img{
+ width: 250px;
+}
+
+.about2-text{
+ width: 100%;
+ color: #ffffff;
+ letter-spacing: 2px;
+ margin-bottom: 20px;
+ display: inline-block;
+ 
+}
+
+.about2-text h2{
+ font-size: 70px;;
+ font-weight: 600;
+ margin-bottom: 10px;
+}
+
+.about2-text h2 span{
+ color: #190482;
+}
+
+.about2-text h3{
+ color: #190482;
+}
+/*EDUCATION*/
+
+#education{
+  width: 100%;
+  height: 120vh; 
+  display: flex;
+  margin-bottom: 20px;
+  box-sizing: border-box;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: #8E8FFA;
+  padding: 40px 0px;
+}
+
+.education-container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.education-box{
+  background-color: #ffffff;
+  width: 350px;
+  height: 530px; 
+  margin: 20px; 
+  border-radius: 10px;
+  overflow: hidden;
+  margin-bottom: 5%;
+  margin-top: 1%;
+  box-shadow: 5px 10px 30px #190482;
+  position: relative;
+}
+
+.education-img{
+  width: 100%;
+  height: 60%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.education-img img{
+  width: 75%;
+  height: 70%
+}
+
+.education-text h4 {
+  font-weight: bold;
+}
+
+.education-text{
+  width: 100%;
+  height: 35%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.education-text p{
+  text-align: center;
+}
+
+.education-heading{
+  text-align: center;
+  color: #ffffff;
+  margin: 20px 0px;
+}
+
+.education-heading h1{
+  font-size: 2.5rem;
+  color: #190482 
+}
+
+.education-heading p{
+  color: #ffffff;
+}
+
+/*K's education*/
+
+#education2{
+  width: 100%;
+  height: 120vh; 
+  display: flex;
+  margin-bottom: 20px;
+  box-sizing: border-box;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: #8E8FFA;
+  padding: 40px 0px;
+}
+
+.education2-container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.education2-box{
+  background-color: #ffffff;
+  width: 350px;
+  height: 530px; 
+  margin: 20px; 
+  border-radius: 10px;
+  overflow: hidden;
+  margin-bottom: 5%;
+  margin-top: 1%;
+  box-shadow: 5px 10px 30px #190482;
+  position: relative;
+}
+
+.education2-img{
+  width: 100%;
+  height: 60%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.education2-img img{
+  width: 75%;
+  height: 70%
+}
+
+.education2-text h4 {
+  font-weight: bold;
+}
+
+.education2-text{
+  width: 100%;
+  height: 35%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.education2-text p{
+  text-align: center;
+}
+
+.education2-heading{
+  text-align: center;
+  color: #ffffff;
+  margin: 20px 0px;
+}
+
+.education2-heading h1{
+  font-size: 2.5rem;
+  color: #190482 
+}
+
+.education2-heading p{
+  color: #ffffff;
+}
+
+
+/*Skills*/
+#skills {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px;
+}
+
+.skill-box {
+  padding: 20px;
+  width: 40%; 
+}
+
+.skill-box h3{
+  text-align: center;
+  color: #190482;
+  margin-top: 0;
+  font-weight: 600;
+  
+}
+
+.skill-box .images {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.skill-box img {
+  width: 100px; 
+  height: 100px; 
+  margin: 5px; 
+  transition: transform 0.3s ease-in-out;
+}
+
+.skill-box img:hover {
+  transform: scale(1.2);
+}
+
+body, html {
+ margin: 0;
+ padding: 0;
+ height: 100%;
+}
+
+
+/* Adjustments for smaller devices---------------------------------------------------------------------------*/
+@media only screen and (max-width: 768px) {
+    /* General Styles */
+    body {
+        font-size: 16px;
+    }
+
+    /* Header */
+    #header {
+        height: auto;
+        padding: 80px 5%;
+        text-align: center;
+        align-items: center;
+        background-position: center;
+    }
+
+    #home {
+      width: 90%;
+      height: 500px;
+      background-repeat: no-repeat;
+      flex-direction: column; 
+      position: relative;
+    }
+
+    .home-img {
+      width: 80%;
+      border-radius: 10px;
+      left: 20px;
+      bottom: 60%;
+      margin: 80px auto 20px auto; 
+      display: block; 
+    }
+
+    .home-img img{
+      width: 200px;
+      border-radius: 20px;
+     }
+    
+
+    .home-text {
+        width: 100%;
+        left: 20px;
+        top: 50%;
+        transform: translate(0, -50%);
+        text-align: center;
+        margin: auto;
+    }
+
+    .home-text h1 {
+        font-size: 30px;
+        letter-spacing: 1px;
+    }
+
+    .header-btn {
+        width: 120px;
+        margin: 20px auto;
+        margin-bottom: -120px;
+    }
+
+    .home-text p{
+       font-size: 12px;
+    }
+
+.logo img{
+  width: 60px;
+}
+
+    /* Navigation */
+   nav {
+  position: fixed;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  align-items: center;
+  z-index: 9999;
+  width: 100%; 
+  background-color: #7752FE; 
+}
+
+nav ul {
+  display: flex;
+  padding: 0;
+  margin: 0;
+}
+
+nav ul li {
+  margin: 0;
+}
+
+nav ul li a {
+  padding: 5px 10px; 
+  font-size: 9px;
+  color: #ffffff; 
+  transition: color 0.3s ease; 
+}
+
+nav ul li a:hover{
+  border-bottom: 2px solid #C2D9FF;
+  box-shadow: 5px 10px 30px #190482;
+}
+
+#about {
+  height: auto;
+  padding: 50px 5%;
+  padding: 30px 5% 20px 5%;
+  align-items: center;
+  text-align: center;
+  flex-direction: column; 
+  background-position: cover;
+}
+
+.about-box {
+  width: 90%;
+  margin-bottom: 40px;
+}
+
+.about-img {
+  width: 80%;
+  margin-bottom: 20px;
+}
+
+.about-text h2 {
+  font-size: 36px;
+}
+
+/* Education Section */
+#education {
+  height: auto;
+  padding: 40px 5%;
+}
+
+.education-container {
+  flex-direction: column;
+  align-items: center;
+}
+
+.education-box {
+  width: 200px;
+  height: 510px;
+  width: 85%;
+  margin: 20px 0;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 5px 10px 30px #190482;
+  position: relative;
+}
+
+.education-text{
+  width: 100%;
+  height: 35%;
+  font-size: 14px;;
+  display: flex;
+  margin-top: -20px;
+  align-items: center;
+  justify-content: center;
+}
+
+.education-heading h1{
+  font-size: 2.5rem;
+  color: #190482 
+}
+
+.education-img img{
+  width: 60%;
+  height: 60%
+}
+
+
+/*K*/
+#home2 {
+  width: 100%;
+  height: 100vh;
+  padding: 50px 5%;
+  padding: 30px 5% 20px 5%;
+  align-items: center;
+  text-align: center;
+  flex-direction: column; 
+  background-position: cover;
+}
+
+
+.home2-img {
+  width: 80%;
+  border-radius: 10px;
+  left: 20px;
+  bottom: 45%;
+  margin: 80px auto 20px auto; 
+  display: block;
+}
+
+
+.home2-text {
+    width: 100%;
+    left: 20px;
+    top: 50%;
+    transform: translate(0, -50%);
+    margin: 80px auto 10px auto;
+    text-align: center;
+    bottom: 50%;
+    margin: auto;
+}
+
+.home2-text h1 {
+    font-size: 30px;
+    letter-spacing: 1px;
+}
+
+.header-btn {
+    width: 120px;
+    margin: 20px auto;
+    margin-bottom: -120px;
+}
+
+.home2-text p{
+   font-size: 12px;
+}
+
+.about-box {
+  width: 90%;
+  margin-bottom: 40px;
+}
+
+.home2-img {
+  width: 80%;
+  margin-top: 60px;
+}
+
+.home2-img img{
+  width: 200px;
+  margin-top: -40px;
+  border-radius: 20px;
+ }
+
+ #about2 {
+  height: auto;
+  padding: 50px 5%;
+  padding: 30px 5% 20px 5%;
+  align-items: center;
+  text-align: center;
+  flex-direction: column; 
+  background-position: cover;
+}
+
+.about2-box {
+  width: 90%;
+  margin-bottom: 40px;
+  margin-right: 1%;;
+}
+
+.about2-img {
+  width: 80%;
+  margin-bottom: 20px;
+  
+}
+
+.about2-text h2 {
+  font-size: 36px;
+}
+
+.education2-heading h1{
+  font-size: 2.5rem;
+  color: #190482 
+}
+
+#education2 {
+  height: auto;
+  padding: 40px 5%;
+}
+
+.education2-container {
+  flex-direction: column;
+  align-items: center;
+}
+
+.education2-box {
+  width: 200px;
+  height: 510px;
+  width: 85%;
+  margin: 20px 0;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 5px 10px 30px #190482;
+  position: relative;
+}
+
+.education-text{
+  width: 100%;
+  height: 35%;
+  font-size: 14px;;
+  display: flex;
+  margin-top: -20px;
+  align-items: center;
+  justify-content: center;
+}
+
+.education-img img{
+  width: 60%;
+  height: 60%
+}
+
+.skills {
+  flex-direction: column;
+  margin: 10px;
+}
+
+.skill-box {
+  width: 90%; 
+  margin-bottom: 20px; 
+  border-color: #ffffff;
+  margin-right: 40px;
+}
+
+.skill-box .images {
+  justify-content: center;
+  max-width: 100%; 
+  height: auto;
+}
+
+.skill-box img {
+  width: 80px; 
+  height: 80px; 
+  margin: 3px; 
+}
+
+.content {
+  width: 80%;
+}
+
+.contacts {
+  flex-direction: column;
+}
+
+.contact-person {
+  margin-bottom: 20px;
+}
+}
+
+
+
+
+
